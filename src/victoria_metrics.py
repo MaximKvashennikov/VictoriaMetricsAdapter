@@ -186,4 +186,8 @@ if __name__ == "__main__":
         metric_label=example_metric_data_two,
     )
 
-    print(vm.get_metric_range_data(metrics=['test_metric_1', 'test_metric_2']))
+    print(
+        vm.get_metric_range_data(
+            metrics=[example_metric_data_one.metric_name, example_metric_data_two.metric_name]
+        )
+    )
