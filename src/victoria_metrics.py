@@ -10,8 +10,8 @@ from src.models.metric_models import ExampleMetricLabel, ExampleMetricData, Base
 
 
 class VictoriaMetricsClient:
-    SERIES = '/prometheus/api/v1/series'
-    QUERY_RANGE = '/prometheus/api/v1/query_range'
+    SERIES = '/api/v1/series'
+    QUERY_RANGE = '/api/v1/query_range'
     IMPORT = '/api/v1/import'
     DELETE_SERIES = '/api/v1/admin/tsdb/delete_series'
 
